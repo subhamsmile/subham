@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 git branch: 'main' , url: 'https://github.com/subhamsmile/mavan000.git'
-                'sh mvn clean install'
+                sh 'mvn clean install'
           
             }
         }
